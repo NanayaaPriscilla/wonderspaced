@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+    <style>
+        .username-circle {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: burlywood;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+        
+        
+        .navbar-nav .nav-link{
+            color:black;
+            margin-right: 40px;
+            position: relative;
+            font-size: 1.1rem;
+        }
+
+        
+
+        .navbar-nav .nav-link .active{
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link .active::after,
+        .navbar-nav .nav-link:hover::after{
+            content: '';
+            position: absolute;
+            left:0;
+            right:0;
+            bottom:-5px;
+            height:3px;
+            border-bottom: 5px solid blue;
+            
+        }
+        .banner{
+            width: 100%;
+            display: block;
+            height: 300px;
+            border-radius: 30px !important;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+            
+        }
+
+        .card-img-top{
+            padding: 10px;
+        }
+
+        
+       h5{
+        letter-spacing: -2px;
+
+       }
+
+        .rating{
+            color: #f39c12;
+            font-size: 0.6rem;
+            letter-spacing: 2px;
+            justify-content: end;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+<header class="border-bottom">
+    <div class="d-flex align-items-center justify-content-between py-4">
+        <!-- Logo on the left --> 
+        <div class="logo img-fluid ms-5 ">
+            <img src="Images/WonderspacEd-logo.png" alt="Logo" height="40px">
+        </div>
+        
+
+        <!-- Search bar in the center -->
+        <div class="flex-grow-1 px-3 ">
+            <form class="d-flex justify-content-center">
+                <input class="form-control w-50 text-bg-light text-muted" type="search" placeholder="What do you want to learn?" aria-label="Search">
+              <span class="input-group-text">
+                <i class="bi bi-search"></i>
+              </span>
+            </form>
+        </div>
+
+        <!-- Notification icon and username initial on the right -->
+         <div class="d-flex align-items-center">
+            <button class="btn btn-light me-3 position-relative">
+                <!-- Notification bell icon -->
+                <i class="bi bi-bell"></i>
+                <!-- Notification badge -->
+                <span class="position-absolute top-0 start-100 translate-middle ">
+                
+                </span>
+            </button>
+            <div class="username-circle ">N</div> <!-- User initial in a circle -->
+         </div>
+    </div>  
+         <br>
+    
+
+
+
+        
+                <div class="d-flex justify-content-start ms-5 ">
+                 <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">My Library</a>
+                    </li>
+                 </ul>
+                </div>
+       
+</header>
+    
+
+    <div class="bg-light">
+    <section class="content">
+        <div class=" d-flex justify-content-end mt-4 mb-4"><span class="text-muted"> Good afternoon</span>,
+            <span class="fw-bold">Natalie</span>
+        </div>
+        <img src="Images/discover-banner.png" alt="banner" class="banner mb-5">
+
+    </section>
+    <section class="content2 ">
+        <h3 class="m-5 mb-5">Recently Added</h3>
+
+    
+         <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Images/amu.png" class="card-img-top img-fluid" alt="card-image1" style="
+                            border-radius:20px;">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">The Life of Ephraim Amu <span class="rating mx-1">4.5 <i class="fas fa-star">
+                                     </i></span> </h5>
+                                
+                                     <p class="card-text">Find more about the legendary Ephraim Amu in
+                                    this educational animated episode.Also learn about the flute.
+                                     </p>                         
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Images/kente.png" class="card-img-top img-fluid" alt="card-image1" style="
+                            border-radius:20px;">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Kente Ghana's Colourful cloth<span class="rating mx-1">4.5 <i class="fas fa-star">
+                                     </i></span> </h5>
+                                
+                                     <p class="card-text">Discover the amazing history behind Ghana's Kente cloth.
+                                        At-home activity:Weave your own Kente pattern with paper.
+                                     </p>
+                            </div>        
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Images/adinkra.png" class="card-img-top img-fluid" alt="card-image1" style="
+                            border-radius:20px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Adinkra Village Adventure<span class="rating">4.5 <i class="fas fa-star">
+                                    </i></span> </h5>
+                                                    
+                                    <p class="card-text">Children will learn about the intersting history behind adinkra symbols.
+                                           At-home activity:Make your own Adinkra stamps and more.
+                                    </p>
+                            </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Images/castle.png" class="card-img-top img-fluid" alt="card-image1" style="
+                            border-radius:20px;">
+                            <div class="card-body">
+                                <h5 class="card-title">The Jubilee House of Ghana <span class="rating mx-1">4.5 <i class="fas fa-star">
+                                    </i></span> </h5>
+                                                    
+                                    <p class="card-text">Jubilee House, is the presidential palace in Accra that 
+                                        serves as a residence and office to the President of Ghana,located in Accra.
+                                    </p>
+                            </div>
+                    </div>
+                </div>
+
+                
+                                    
+            </div>
+         </div>
+    </section>    
+
+    <section class="content3 ">
+      <span class="d-flex justify-content-between align-items-center"><h3 class="m-5 mb-5">Most Popular</h3><button class=" btn btn-warning">
+       View more</button>
+      </span>
+
+    <div class="container2 mt-5">
+        <div  class="row">
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img src="Images/lesson-1.png" class="card-img" alt="lesson-1">
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img src="Images/lesson-2.png" class="card-img" alt="lesson-1">
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img src="Images/lesson-3.png" class="card-img" alt="lesson-1">
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <img src="Images/lesson-4.png" class="card-img" alt="lesson-1">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    </div>
+    
+    
+</div>
+
+
+<!-- Bootstrap JS and Icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</body>
+</html>
+
+

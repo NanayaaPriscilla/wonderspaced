@@ -1,0 +1,30 @@
+
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+    
+}
+
+.login-form{
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.form-control, .btn{
+    width: 100%;
+}
+
+
+.underline{
+    text-decoration: none;
+    color: black;
+}
+
+
+.Terms{
+    text-decoration: none;
+    color:black
+}
